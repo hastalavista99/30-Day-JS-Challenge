@@ -11,7 +11,12 @@
 
 ## Daily Log
 ### Day 1: 01/05/2025 - Working with Arrays
--Completed all exercises
+-Completed all exercises: 
+                Create a function that takes an array of numbers and returns statistics (min, max, mean, median)
+                Implement a function that chunks an array into groups of a specified size
+                Write a function that removes duplicates from an array using multiple approaches
+                Create a utility that finds the intersection of two arrays
+                
 -Key learnings: filter and reduce are powerful array methods
                 indexOf() returns a -1 when the element passed to it is not found, hence why it has been used in the for loop to remove duplicates in an array
                 indexOf() always returns the first occurrence of the element in an array, hence being very useful in removing duplicates
@@ -25,4 +30,16 @@
 -Code: days/day-01
 
 
-### Day 2:
+### Day 2: 02/05/2025 - Object Manipulation
+-Completed all exercises: 
+                Write a function that merges two objects deeply (nested properties)
+                Create a function that extracts specific properties from an object
+                Implement a function that compares two objects for equality
+                Build a function that creates an object from an array of key-value pairs
+
+-Key Learnings: Objects use key value pairs ({key: value})
+                Objects are mutable: They are addressed by reference, not by value.
+
+-Insights: Objects are a major component of JavaScript and I intend to do more with them in this challenge
+
+Code: days/day-02
