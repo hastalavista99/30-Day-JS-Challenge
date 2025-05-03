@@ -43,3 +43,17 @@
 -Insights: Objects are a major component of JavaScript and I intend to do more with them in this challenge
 
 Code: days/day-02
+
+### Day 3: 03/05/2025 - Practical String Operations
+-Completed all exercises: 
+                Create a string template engine that replaces {{variables}} with values
+                Implement a function that validates different formats (email, phone, URL)
+                Build a utility that transforms text between camelCase, snake_case, and kebab-case
+                Write a function that extracts all links from a HTML string
+
+-Key Learnings: JS has alot of string methods to allow string manipulation
+                RegEx is a necessary skill for the manipulation of some string e.g. extraction from HTML string
+
+-Insights: Should learn more RegEx
+
+Code: days/day-03
