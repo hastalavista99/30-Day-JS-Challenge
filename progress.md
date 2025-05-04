@@ -57,3 +57,18 @@ Code: days/day-02
 -Insights: Should learn more RegEx
 
 Code: days/day-03
+
+### Day 4: 04/05/2025 - Functions & Scope
+-Completed all exercises: 
+                Create a function that returns a memoized version of any function
+                Implement a function that limits how many times another function can be called
+                Write a function that executes a callback after a specified delay
+                Build a function that creates a throttled version of another function
+
+-Key Learnings: Throttling is especially valuable for optimizing performance-sensitive event handlers.
+                The delayed function and callback gives you precise control over delayed operations with an elegant API.
+
+-Insights: Today's challenge was all about maximizing performance
+
+Code: days/day-04
+
