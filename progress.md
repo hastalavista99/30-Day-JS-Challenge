@@ -60,35 +60,75 @@ Code: days/day-03
 
 ### Day 4: 04/05/2025 - Functions & Scope
 -Completed all exercises: 
-                Create a function that returns a memoized version of any function
-                Implement a function that limits how many times another function can be called
-                Write a function that executes a callback after a specified delay
-                Build a function that creates a throttled version of another function
 
--Key Learnings: Throttling is especially valuable for optimizing performance-sensitive event handlers.
-                The delayed function and callback gives you precise control over delayed operations with an elegant API.
+Create a function that returns a memoized version of any function
+Implement a function that limits how many times another function can be called
+Write a function that executes a callback after a specified delay
+Build a function that creates a throttled version of another function
 
--Insights: Today's challenge was all about maximizing performance
+-Key Learnings: 
+
+Throttling is especially valuable for optimizing performance-sensitive event handlers.
+The delayed function and callback gives you precise control over delayed operations with an elegant API.
+
+-Insights: 
+
+Today's challenge was all about maximizing performance
 
 Code: days/day-04
 
+
 ### Day 5: 05/05/2025 - ES6 Features in Practice
 -Completed all exercises: 
-                Refactor a complex function to use destructuring and default parameters
-                Convert a function to use rest/spread operators for flexibility
-                Implement a simple class hierarchy with inheritance
-                Create a set of utility functions using arrow functions and template literals
 
--Key Learnings: Arrow Functions make code more concise and maintain lexical this binding, which eliminates common scoping issues in callbacks and event handlers
-                Pure functions (like most utilities in the last exercise) produce consistent outputs for given inputs, improving predictability and testability
-                Function composition techniques (pipe and compose) allow building complex operations from simple ones, enhancing reusability
+Refactor a complex function to use destructuring and default parameters
+Convert a function to use rest/spread operators for flexibility
+Implement a simple class hierarchy with inheritance
+Create a set of utility functions using arrow functions and template literals
 
--Insights:  Debounce and throttle are essential for handling high-frequency events like scrolling, resizing, or typing
-            Browser APIs like Intl provide robust internationalization without external libraries
-            Regular expressions are powerful but should be used judiciously and commented when complex (as in validation functions)
-            Utility functions should be small, focused, and composable rather than trying to do too much
+-Key Learnings: 
+
+Arrow Functions make code more concise and maintain lexical this binding, which eliminates common scoping issues in callbacks and event handlers
+Pure functions (like most utilities in the last exercise) produce consistent outputs for given inputs, improving predictability and testability
+Function composition techniques (pipe and compose) allow building complex operations from simple ones, enhancing reusability
+
+-Insights:  
+
+Debounce and throttle are essential for handling high-frequency events like scrolling, resizing, or typing
+Browser APIs like Intl provide robust internationalization without external libraries
+Regular expressions are powerful but should be used judiciously and commented when complex (as in validation functions)
+Utility functions should be small, focused, and composable rather than trying to do too much
 
 Code: days/day-05
+
+### Day 6: 06/05/2025 - Advanced JavaScript Patterns
+
+-Completed all exercises:
+
+Implemented retry mechanism for handling transient failures
+Created waterfall function for sequential async operations
+Built parallel execution utility with concurrency limits
+Developed simple state machine implementation
+
+
+-Key Learnings:
+
+Retry patterns are essential for resilient network operations and API calls
+Sequential execution (waterfall) provides control when each step depends on previous results
+Concurrency management prevents overwhelming services while maintaining performance
+State machines formalize complex workflows and prevent impossible state transitions
+
+
+-Insights:
+
+Error handling strategy differs significantly between sequential and parallel operations
+Promise-based utilities can dramatically simplify complex asynchronous flows
+Context objects provide cleaner data passing than long parameter lists
+Well-designed patterns reduce cognitive load when reading/maintaining code
+
+
+
+Code: days/day-06
 
 
 
