@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-2xl mx-auto bg-white shadow-xl rounded-xl p-6">
+      <h1 class="text-2xl font-bold mb-4 text-center">📝 Task Manager</h1>
+
+      <form id="taskForm" class="space-y-4 mb-6">
+        <input
+          type="text"
+          id="title"
+          placeholder="Task Title"
+          required
+          class="w-full border border-gray-300 rounded px-3 py-2"
+        />
+        <textarea
+          id="description"
+          placeholder="Description (optional)"
+          class="w-full border border-gray-300 rounded px-3 py-2"
+        ></textarea>
+        <input
+          type="date"
+          id="dueDate"
+          class="w-full border border-gray-300 rounded px-3 py-2"
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white rounded py-2 hover:bg-blue-700 transition"
+        >
+          ➕ Add Task
+        </button>
+      </form>
+
+      <h2 class="text-xl font-semibold mb-2">📋 Your Tasks</h2>
+      <div id="taskList" class="space-y-4"></div>
+
+      <h2 class="text-xl font-semibold mt-8 mb-2">📊 Stats</h2>
+      <div id="stats" class="bg-gray-50 p-4 rounded shadow text-gray-700"></div>
+    </div>
+
+    <script src="taskManager.js"></script>
+    <script>
+      const manager = new TaskManager();
+      const taskForm = document.getElementById("taskForm");
+      const taskList = document.getElementById("taskList");
+      const statsDiv = document.getElementById("stats");
+
+      function renderTasks() {
+        taskList.innerHTML = "";
+        const tasks = manager.readTasks();
+
+        if (tasks.length === 0) {
+          taskList.innerHTML = '<p class="text-gray-500">No tasks yet.</p>';
+          return;
+        }
+
+        tasks.forEach((task) => {
+          const div = document.createElement("div");
+          div.className = `p-4 rounded shadow border ${
+            task.completed
+              ? "bg-green-100 border-green-300"
+              : "bg-white border-gray-300"
+          }`;
+
+          div.innerHTML = `
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-lg font-medium ${
+                task.completed ? "line-through text-green-700" : ""
+              }">${task.title}</h3>
+              ${
+                task.description
+                  ? `<p class="text-sm text-gray-600">${task.description}</p>`
+                  : ""
+              }
+              ${
+                task.dueDate
+                  ? `<p class="text-sm text-gray-500">Due: ${task.dueDate}</p>`
+                  : ""
+              }
+            </div>
+            <div class="space-x-2">
+              <button onclick="toggle('${task.id}')"
+                      class="px-2 py-1 text-sm rounded ${
+                        task.completed
+                          ? "bg-yellow-400 hover:bg-yellow-500 text-white"
+                          : "bg-green-500 hover:bg-green-600 text-white"
+                      }">
+                ${task.completed ? "Undo" : "Complete"}
+              </button>
+              <button onclick="del('${task.id}')"
+                      class="px-2 py-1 text-sm bg-red-500 hover:bg-red-600 text-white rounded">
+                Delete
+              </button>
+            </div>
+          </div>
+        `;
+          taskList.appendChild(div);
+        });
+
+        const stats = manager.getStats();
+        statsDiv.innerHTML = `
+        <p>Total: <strong>${stats.total}</strong></p>
+        <p>Completed: <strong>${stats.completed}</strong></p>
+        <p>Pending: <strong>${stats.pending}</strong></p>
+        <p>Completion Rate: <strong>${stats.completionRate}%</strong></p>
+      `;
+      }
+
+      function toggle(id) {
+        manager.toggleComplete(id);
+        renderTasks();
+      }
+
+      function del(id) {
+        manager.deleteTask(id);
+        renderTasks();
+      }
+
+      taskForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const title = document.getElementById("title").value;
+        const description = document.getElementById("description").value;
+        const dueDate = document.getElementById("dueDate").value;
+
+        manager.createTask({ title, description, dueDate });
+        taskForm.reset();
+        renderTasks();
+      });
+
+      renderTasks();
+    </script>
+  </body>
+</html>
