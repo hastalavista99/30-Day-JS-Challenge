@@ -155,5 +155,30 @@ Code: days/day-06
 
 Code: days/day-07
 
+### Day 8: 08/05/2025 - Promise Patterns
+- Completed Implementations:
+
+promisify: Converted callback-based functions to return Promises
+retryWithBackoff: Implemented retry logic with exponential backoff
+promiseTimeout: Added timeout control for long-running Promises
+runWithConcurrency: Managed concurrent Promise execution with a defined limit
+
+- Key Learnings:
+
+Promises are flexible abstractions for async control but require careful orchestration
+Retrying and timeouts are essential for resilience in network-bound systems
+Concurrency limiting improves performance without overwhelming resources
+Wrapping legacy code with Promises improves maintainability and integration
+
+-Insights:
+
+Retry logic must balance between giving up too early and retrying forever — exponential backoff is a good compromise
+Timeout utilities prevent UI and system hangs in unpredictable networks
+Promise.race is a powerful pattern to combine competing async operations (e.g., timeout vs. result)
+Splitting async workflows into small composable utilities improves readability and testability
+Handling concurrency is a recurring pattern in APIs, file processing, and UI interactions
+
+Code: days/day-08
+
 
 
