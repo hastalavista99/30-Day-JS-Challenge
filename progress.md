@@ -180,5 +180,32 @@ Handling concurrency is a recurring pattern in APIs, file processing, and UI int
 
 Code: days/day-08
 
+### Day 9: 09/05/2025 - Fetch API & Data Handling
+
+- Completed the following utilities:
+
+        Fetch wrapper with built-in timeout and error handling using AbortController
+        Lightweight caching layer using Map with TTL control
+        API transformer utility to reshape response data before use
+        Two-way sync function between API and localStorage
+
+- Key Learnings
+
+    AbortController is essential for fetch timeout control — especially for production apps
+    Caching can dramatically improve performance and reduce API load, even with a simple TTL
+    Transforming data before returning it helps reduce coupling between backend and frontend
+    Using localStorage as a synchronization layer helps in offline-first strategies and improves UX
+
+- Insights
+
+    Learned to isolate concerns: fetching, transforming, caching, and persisting were all cleanly separated
+    Recognized how many real-world apps quietly rely on transformation layers between raw API responses and UI consumption
+    Map is a great structure for lightweight, in-memory caching; you don’t always need Redux or IndexedDB
+    Timing and TTL are subtle tools that can greatly improve perceived performance
+    Mixing what I learned on Day 8 (timeouts, retry logic) added resilience to today's utilities
+
+Code: days/day-09
+🧠 Confidence Level: Growing! Fetch and data shaping now feel easier to reason about and implement.
+
 
 
