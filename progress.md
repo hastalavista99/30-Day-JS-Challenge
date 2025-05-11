@@ -207,5 +207,33 @@ Code: days/day-08
 Code: days/day-09
 🧠 Confidence Level: Growing! Fetch and data shaping now feel easier to reason about and implement.
 
+### Day 10: 10/05/2025 - Local Data Storage
+
+- Completed implementation of:
+
+        A localStorage wrapper that handles expiration and auto-removal
+        A simple client-side database using IndexedDB with async/await support
+        A sessionStorage utility that auto-cleans expired data
+        A form syncing tool that saves user input to localStorage and restores it on load
+
+- Key Learnings
+
+    localStorage and sessionStorage are synchronous but powerful for lightweight persistence
+    Expiry logic can be layered on top of browser storage to simulate TTL-based caching
+    IndexedDB provides robust structured storage, suitable for larger or indexed datasets
+    sessionStorage is ideal for temporary, session-limited state (e.g. forms, auth flow)
+    Syncing UI with storage helps prevent user frustration from accidental data loss
+
+- Insights
+
+    Wrapping native browser storage in small utility modules makes code reusable and readable
+    Combining form syncing with storage expiration can simulate autosave features like in Notion or Google Docs
+    Using JSON.stringify() for storage is simple, but care must be taken to validate structure on retrieval
+    IndexedDB has quirks, but async/await helps manage it without callback hell
+    Learning to persist UI state improves the perceived reliability of your app
+    
+Code: days/day-10
+🧠 Confidence Level: Higher! More fluent in client-side storage strategies and async browser APIs.
+
 
 
