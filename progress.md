@@ -236,4 +236,26 @@ Code: days/day-10
 🧠 Confidence Level: Higher! More fluent in client-side storage strategies and async browser APIs.
 
 
+### Day 11: 11/05/2025 - Event Handling
 
+- Completed:
+        A clean and reusable pub/sub system for decoupled communication
+        Event delegation pattern for handling dynamically added elements
+        Debounce and throttle utilities to improve performance of frequent events
+        Centralized event listener manager for easier cleanup and memory safety
+
+- Key Learnings
+        Custom event systems are powerful for decoupled architecture
+        Event delegation simplifies dynamic UIs by reducing the number of listeners
+        Debounce avoids unnecessary triggers (e.g., live search), while throttle controls pace (e.g., scroll)
+        Managing and cleaning up listeners is essential in SPAs to avoid memory leaks
+
+- Insights
+
+        The pub/sub model could scale into a more robust state or signal system later
+        Clean event handling code makes your app feel more performant and reliable
+        DOM performance improves significantly when using delegation for large/complex trees
+        I now better appreciate how modularizing utility logic like debounce, throttle, or event manager keeps the UI layer lightweight
+
+Code: days/day-11
+🧠 Confidence Level: Improving! Handling real UI events now feels more intuitive and controlled.
