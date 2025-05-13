@@ -259,3 +259,26 @@ Code: days/day-10
 
 Code: days/day-11
 🧠 Confidence Level: Improving! Handling real UI events now feels more intuitive and controlled.
+
+
+### Day 12: 12/05/2025 - Form Validation & Handling
+- Completed:
+        Custom validation engine with reusable rules
+        Functions for form data serialization and restoration
+        Auto-save and resume form state via localStorage
+        File upload handling with real-time preview for images
+
+- Key Learnings
+        Creating my own validation logic gave me full control over UI and error handling
+        Serializing forms simplifies autosave, previews, and draft saving workflows
+        Handling partial progress and restoring state improves UX significantly
+        File input behavior is nuanced — previewing image files brings a smoother experience
+
+- Insights
+        Validation logic can be modular, functional, and flexible — no need for large libraries
+        HTML5’s FormData is a hidden gem for both traditional form submission and state capture
+        Saving form progress with input events mimics real-world autosave systems
+        File previews add professionalism to forms, especially for images, profiles, and uploads
+
+Code: days/day-12
+🧠 Confidence Level: High! Forms used to feel complex — now they feel like manageable mini apps.
