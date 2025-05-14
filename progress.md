@@ -282,3 +282,34 @@ Code: days/day-11
 
 Code: days/day-12
 🧠 Confidence Level: High! Forms used to feel complex — now they feel like manageable mini apps.
+
+### Day 13: 13/05/2025 - Date & Time Manipulation
+- Completed:
+        Lightweight date formatting utility with multiple presets
+
+        Date difference calculator with support for different units
+
+        Smart scheduling tool that accounts for business hours/days
+
+        Countdown timer with pause/resume/reset capability
+
+- Key Learnings
+        Date objects are mutable — it's easy to make off-by-one or timezone errors if careless
+
+        Working with units (days, hours, etc.) is clearer when abstracted into utility functions
+
+        Business logic (like only operating Mon–Fri, 9–5) is critical for scheduling apps
+
+        Countdown logic mimics real-world UI behaviors (e.g., quizzes, timers, productivity tools)
+
+- Insights
+        Localized formatting via toLocaleString() gives flexibility without needing libraries
+
+        Scheduling tools need to be strict with edge cases (weekends, off-hours)
+
+        Countdown timers are a solid async challenge, especially with pause/reset logic
+
+        Date/time utilities are useful in any app involving reminders, timers, or logs
+
+Code: days/day-13
+🧠 Confidence Level: Strengthening! Date logic used to be intimidating, but breaking it into utilities makes it much easier to reason about.
