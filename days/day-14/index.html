@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <script defer src="app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-blue-50 text-gray-800 p-4">
+    <div class="max-w-xl mx-auto">
+      <h1 class="text-3xl font-bold mb-4 text-center">🌦️ Weather Dashboard</h1>
+
+      <div class="mb-4 flex gap-2">
+        <input
+          id="cityInput"
+          type="text"
+          placeholder="Enter city..."
+          class="flex-1 p-2 border rounded"
+        />
+        <button id="searchBtn" class="bg-blue-500 text-white px-4 py-2 rounded">
+          Search
+        </button>
+      </div>
+
+      <div id="favorites" class="flex flex-wrap gap-2 mb-4"></div>
+
+      <div id="weatherDisplay" class="p-4 bg-white rounded shadow hidden">
+        <h2 id="cityName" class="text-xl font-semibold mb-2"></h2>
+        <p id="description" class="text-sm text-gray-600"></p>
+        <p id="temperature" class="text-2xl font-bold"></p>
+        <div
+          id="forecast"
+          class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2"
+        ></div>
+      </div>
+
+      <div id="errorMsg" class="text-red-500 mt-4 text-center hidden"></div>
+    </div>
+  </body>
+</html>

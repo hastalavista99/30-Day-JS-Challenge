@@ -313,3 +313,40 @@ Code: days/day-12
 
 Code: days/day-13
 🧠 Confidence Level: Strengthening! Date logic used to be intimidating, but breaking it into utilities makes it much easier to reason about.
+
+
+### Day 14: 14/05/2025 – Project: Weather Dashboard
+
+- Completed Features
+        Real-time weather search using public API
+
+        Forecast preview for next few hours
+
+        Favorite city selection & persistence via localStorage
+
+        Responsive UI using TailwindCSS
+
+Error & state handling
+
+- Key Learnings
+        Learned to manage async operations with multiple fetches and error boundaries
+
+        Practice with real-world data formats and parsing APIs
+
+        DOM updates based on dynamic user input and local state
+
+        API token security and query optimization for performance
+
+        Clear separation of responsibilities: UI rendering, API handling, state storage
+
+- Insights
+        Wrapping API interactions in utilities helps with reuse and testing
+
+        Modular design makes adding features (like 5-day forecast or dark mode) easier
+
+        Project brought together skills from previous days: form handling, fetch, localStorage, and event delegation
+
+        Better appreciation of user experience flow in real apps
+
+Project Folder: days/day-14
+🧠 Confidence Level: Growing! Real API integration felt like a milestone — managing both data and UX made things click
