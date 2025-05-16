@@ -326,7 +326,7 @@ Code: days/day-13
 
         Responsive UI using TailwindCSS
 
-Error & state handling
+        Error & state handling
 
 - Key Learnings
         Learned to manage async operations with multiple fetches and error boundaries
@@ -348,5 +348,36 @@ Error & state handling
 
         Better appreciation of user experience flow in real apps
 
-Project Folder: days/day-14
+Code: days/day-14
 🧠 Confidence Level: Growing! Real API integration felt like a milestone — managing both data and UX made things click
+
+### Day 15: 15/05/2025 -- DOM Manipulation
+
+- Completed Features
+        Built dynamic HTML elements purely with JavaScript
+
+        Created a mini template engine (useful for future templating)
+
+        Practiced efficient DOM updates using fragments
+
+        Handled animations smoothly with requestAnimationFrame
+
+- Key Learnings
+
+        DOM creation from structured data gives flexibility for UI rendering
+
+        Template strings can be powerful when customized
+
+        Performance matters: minimizing reflows with fragments boosts speed
+
+        Manual animations help understand timing and repaint cycles
+
+- Insights
+
+        These patterns resemble how frameworks (React, Vue) manage the DOM behind the scenes
+
+        Gained appreciation for separation of data and presentation
+
+        Writing animations from scratch made the event loop and rendering pipeline clearer
+
+Code: days/day-15
