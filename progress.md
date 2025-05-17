@@ -381,3 +381,38 @@ Code: days/day-14
         Writing animations from scratch made the event loop and rendering pipeline clearer
 
 Code: days/day-15
+
+
+### Day 16: 16/05/2025 Custom Components
+- Completed
+
+        Created clean, reusable components from scratch
+
+        Reinforced DOM manipulation and event-driven logic
+
+        Added animations for better UX
+
+        Integrated validation patterns into form workflows
+
+- Key Learnings
+
+        Separation of concerns makes code modular and reusable
+
+        Custom components build foundational skills for frameworks
+
+        Managing state and visibility (e.g., for modals) teaches control flow
+
+        Working with forms deepens understanding of user interaction
+
+- Insights
+
+        Small abstractions like createDropdown() scale well across projects
+
+        CSS transitions can drastically improve UX with minimal effort
+
+        Input validation needs to cover format and presence
+
+        Tabbed interfaces and modals helped practice dynamic class toggling and DOM querying
+
+Code: days/day-16
+

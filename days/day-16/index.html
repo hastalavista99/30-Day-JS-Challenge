@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dropdown-container"></div>
+
+    <div id="tabs">
+        <button data-tab="1">Tab 1</button>
+        <button data-tab="2">Tab 2</button>
+        <div data-content="1" class="tab-content">This is Tab 1</div>
+        <div data-content="2" class="tab-content" style="display: none">This is Tab 2</div>
+    </div>
+
+
+    <button id="open-modal">Open Modal</button>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p>Hello from the modal!</p>
+        </div>
+    </div>
+
+    <form id="custom-form">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="submit">Submit</button>
+        <div id="form-msg"></div>
+    </form>
+
+    <script src="./custom_form_elements.js"></script>
+    <script src="./modal_component.js"></script>
+    <script src="./reusable_dropdown_component.js"></script>
+    <script src="./tabbed-interface_component.js"></script>
+
+
+</body>
+
+</html>
