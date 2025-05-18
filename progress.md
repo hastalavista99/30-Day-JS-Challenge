@@ -416,3 +416,36 @@ Code: days/day-15
 
 Code: days/day-16
 
+
+### Day 17: 17/05/2025 Browser Storage
+- Completed
+
+        Built a modular storage abstraction that unifies local/session/memory storage
+
+        Stored and retrieved deeply nested objects
+
+        Created storage monitoring for usage and cleanup triggers
+
+        Enabled real-time cross-tab communication via storage events
+
+- Key Learnings
+
+        JSON serialization is critical for reliable object persistence
+
+        Storage limits can be silently hit, requiring quota checks
+
+        Event-based communication across tabs is powerful for real-time state sync
+
+        Abstracting storage operations reduces code repetition and improves portability
+
+- Insights
+
+        Cross-tab sync makes multi-tab apps feel seamless (e.g. synced settings, presence)
+
+        Even simple cleanup policies can prevent data bloat in long-lived apps
+
+        This unified approach is reusable across projects and scalable to IndexedDB
+
+        Keeping storage structure consistent (namespacing, versioning) matters in real apps
+
+Code: days/day-17
