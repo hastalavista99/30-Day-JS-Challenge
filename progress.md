@@ -480,3 +480,34 @@ Code: days/day-17
         Geo-features open up location-aware logic, such as weather, local content, or check-ins
 
 Code: days/day-18
+
+### Day 19: 19/05/2025 Canvas Basics
+
+- Completed
+        Created dynamic data visualizations using bar charts
+
+        Implemented a fully interactive signature pad
+
+        Built a lightweight image editor with grayscale filter
+
+        Developed a utility to export canvas drawings as PNG
+
+- Key Learnings
+        Canvas provides low-level pixel manipulation and drawing APIs
+
+        Mouse position handling is key for drawing and interaction
+
+        Working with ImageData allows powerful image transformations
+
+        Canvas exports enable building drawing and design tools
+
+- Insights
+        Even basic Canvas features open doors to graphics, gaming, and visual dashboards
+
+        Real-time user input handling (like a signature pad) improves UX
+
+        Image editing helped solidify knowledge of RGBA pixel data
+
+        Combining file input + canvas + download unlocks rich browser-based workflows
+
+Code: days/day-19
