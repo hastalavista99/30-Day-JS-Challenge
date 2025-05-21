@@ -483,3 +483,65 @@ Code: days/day-17
         Memoization is a simple yet powerful pattern to reduce repeated work
 
 Code: days/day-20
+
+
+### Day 18: Useful Browser APIs
+- Completed
+        Built a smooth drag-and-drop zone using dragstart, dragover, and drop
+
+        Accessed location with fallback messaging for unsupported/denied cases
+
+        Used modern Clipboard API for seamless copy-paste experiences
+
+        Triggered user-friendly browser notifications responsibly
+
+- Key Learnings
+        Drag and drop is mostly about handling the right DOM events
+
+        Geolocation depends on user permissions and must be handled gracefully
+
+        Clipboard and Notification APIs are asynchronous and permission-based
+
+        Fallback strategies are essential to avoid silent failures
+
+- Insights
+        Browser APIs extend core JS functionality without third-party tools
+
+        Notifications can dramatically improve engagement when used sparingly
+
+        Clipboard API enhances UX in tools like password managers, editors, or sharing tools
+
+        Geo-features open up location-aware logic, such as weather, local content, or check-ins
+
+Code: days/day-18
+
+### Day 19: 19/05/2025 Canvas Basics
+
+- Completed
+        Created dynamic data visualizations using bar charts
+
+        Implemented a fully interactive signature pad
+
+        Built a lightweight image editor with grayscale filter
+
+        Developed a utility to export canvas drawings as PNG
+
+- Key Learnings
+        Canvas provides low-level pixel manipulation and drawing APIs
+
+        Mouse position handling is key for drawing and interaction
+
+        Working with ImageData allows powerful image transformations
+
+        Canvas exports enable building drawing and design tools
+
+- Insights
+        Even basic Canvas features open doors to graphics, gaming, and visual dashboards
+
+        Real-time user input handling (like a signature pad) improves UX
+
+        Image editing helped solidify knowledge of RGBA pixel data
+
+        Combining file input + canvas + download unlocks rich browser-based workflows
+
+Code: days/day-19

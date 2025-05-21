@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chart">
+        <canvas id="barChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="signature">
+        <canvas id="signature" width="400" height="200" style="border:1px solid #ccc;"></canvas>
+<button onclick="clearPad()">Clear</button>
+
+    </div>
+
+    <div class="image-editor">
+        <input type="file" id="upload" />
+<canvas id="imageCanvas" width="400" height="300"></canvas>
+<button onclick="applyGrayscale()">Grayscale</button>
+
+    </div>
+
+    <div class="image">
+        <button onclick="downloadCanvas()">Download Image</button>
+    </div>
+   <script src="charts.js"></script>
+   <script src="signature_pad.js"></script>
+    <script src="image_editor.js"></script>
+    <script src="downloadable_images.js"></script>
+
+</body>
+</html>
