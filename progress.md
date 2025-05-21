@@ -449,3 +449,37 @@ Code: days/day-16
         Keeping storage structure consistent (namespacing, versioning) matters in real apps
 
 Code: days/day-17
+
+
+### Day 20: 20/05/2025 Application Performance
+🎯 Completed
+
+        Built tools to measure function execution time
+
+        Used DocumentFragment for optimal rendering of large lists
+
+        Implemented lazy loading for images using IntersectionObserver
+
+        Applied memoization to optimize recursive calculations
+
+📚 Key Learnings
+
+        Performance bottlenecks often lie in DOM updates and unoptimized loops
+
+        Memoization drastically speeds up expensive, repeated calculations
+
+        Lazy loading boosts page load speed and user-perceived performance
+
+        Monitoring runtime performance helps pinpoint hot spots
+
+💡 Insights
+
+        performance.now() is more precise than Date.now() for measuring micro-benchmarks
+
+        Rendering optimizations prevent browser reflows and repaints
+
+        Lazy loading should become a default pattern for media-rich applications
+
+        Memoization is a simple yet powerful pattern to reduce repeated work
+
+Code: days/day-20
