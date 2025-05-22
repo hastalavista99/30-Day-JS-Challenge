@@ -545,3 +545,35 @@ Code: days/day-19
         Memoization is a simple yet powerful pattern to reduce repeated work
 
 Code: days/day-20
+
+### Day 21: 21/05/2025 Interactive Quiz Application
+✅ Completed
+        Built an extendable quiz engine supporting 3 question types
+
+        Integrated score and result tracking with clear UX
+
+        Designed a persistent system using localStorage
+
+        Implemented an auto-expiring timer with retry capability
+
+        Responsive UI styled with Tailwind CSS
+
+📚 Key Learnings
+        Abstracting logic for question types leads to cleaner, scalable code
+
+        Handling localStorage persistence manually improves understanding of state management
+
+        Time-bound applications require attention to edge cases (expired but unsaved answers)
+
+        Flexbox/grid and utility-first CSS streamline responsive designs
+
+💡 Insights
+        Simulating real-world interactions like progress save/resume builds stronger app-thinking
+
+        Managing timers with cleanup is essential for SPA performance
+
+        Custom validation logic on text answers brings flexibility
+
+        User feedback and UI responsiveness greatly affect perceived quality
+
+📁 Code: days/day-21
