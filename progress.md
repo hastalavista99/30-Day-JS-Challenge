@@ -739,3 +739,36 @@ Code: days/day-20
 📁 Code: days/day-22  
 
 
+### Day 23: 24/05/2025 API Integration  
+✅ Completed  
+        Developed a reusable REST API client supporting all CRUD methods
+
+        Added session management with persistent login using localStorage 
+
+        Handled multiple response formats robustly (JSON, text)
+
+        Built an offline queue and sync system for POST/PUT requests 
+
+
+📚 Key Learnings  
+        Standardizing request logic prevents code duplication across endpoints 
+        
+        Separating auth from API logic makes services easier to test and scale 
+
+        Offline-first techniques build resilience into apps 
+
+        Being defensive with parsing avoids runtime crashes  
+
+
+💡 Insights  
+        State persistence across reloads using tokens improves UX  
+
+        Having a structured offline retry queue prevents data loss in flaky networks 
+
+        Keeping the API flexible with request overrides (headers/body) is powerful 
+
+        Combining multiple utilities like `AuthService` and `OfflineSync` boosts maintainability  
+
+
+📁 Code: days/day-23  
+
