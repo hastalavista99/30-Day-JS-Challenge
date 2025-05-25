@@ -772,3 +772,36 @@ Code: days/day-20
 
 📁 Code: days/day-23  
 
+
+### Day 24: 25/05/2025 Modular JavaScript  
+✅ Completed  
+        Designed a custom module system supporting dependency injection  
+
+        Built a plugin system with `install()` hooks for scalable extension 
+
+        Implemented lazy loading of external libraries using Promises 
+
+        Managed inter-module dependencies with a factory and cache structure  
+
+
+📚 Key Learnings  
+        Module encapsulation improves code readability and testing 
+        
+        Dynamic script loading introduces async control over dependencies  
+
+        Plugin architecture promotes code reusability and decoupling  
+
+        Emulating CommonJS/ESM concepts deepens understanding of bundlers 
+
+
+💡 Insights  
+        Defining modules with clear dependencies mimics real-world app structure
+
+        Custom plugin APIs help build highly customizable components
+
+        Dependency management can be done manually without heavy tools
+
+        Mixing static modules with dynamic loading provides flexibility for scale 
+
+
+📁 Code: days/day-24  
