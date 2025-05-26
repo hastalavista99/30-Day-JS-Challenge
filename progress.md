@@ -805,3 +805,39 @@ Code: days/day-20
 
 
 📁 Code: days/day-24  
+
+
+### Day 25: 25/05/2025 Error Handling & Debugging
+✅ Completed  
+
+        Developed a global error handler with fallback for promises  
+        
+        Created custom error types (ValidationError, NetworkError)  
+        
+        Built a structured logging utility with info/warn/error levels  
+        
+        Implemented debugging helpers for logging internal state  
+        
+
+📚 Key Learnings  
+
+        Global error listeners help catch silent failures  
+        
+        Custom errors clarify exception origin and are easier to handle  
+        
+        Structured logging provides traceability and debugging context  
+        
+        Debugging utilities reduce noise and increase observability  
+        
+
+💡 Insights  
+
+        Clear logging standards reduce time spent on root cause analysis  
+        
+        Visualizing logs and state is key for frontend debugging  
+        
+        Having reusable error/reporting utilities enhances maintainability  
+        
+
+📁 Code: days/day-25
+
