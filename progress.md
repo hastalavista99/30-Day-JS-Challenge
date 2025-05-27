@@ -841,3 +841,39 @@ Code: days/day-20
 
 📁 Code: days/day-25
 
+
+### Day 26: 26/05/2025 Testing Your Code
+✅ Completed  
+
+        Built a minimal test runner with assertions and test output  
+        
+        Implemented support for mocks and return-value stubs  
+        
+        Wrote browser-executed test cases for past utilities  
+        
+        Added test output display with pass/fail summary  
+        
+
+📚 Key Learnings  
+
+        Small testing tools make it easier to test incrementally  
+        
+        Mocks and stubs simulate real behavior for isolated tests  
+        
+        Immediate visual feedback helps detect regressions early  
+        
+        Writing tests reveals edge cases not initially considered  
+        
+
+💡 Insights  
+
+        Simple frameworks are enough for small projects and learning 
+         
+        Error messages should be descriptive to help fix bugs fast  
+        
+        Isolating pure functions makes them much easier to test  
+        
+        Debugging via failed assertions is faster than console.logs  
+        
+
+📁 Code: days/day-26
