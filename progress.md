@@ -877,3 +877,40 @@ Code: days/day-20
         
 
 📁 Code: days/day-26
+
+### Day 27: 27/05/2025 Code Quality & Optimization
+✅ Completed  
+
+        Built a simple code analysis function to detect risky patterns  
+
+        Implemented a basic timing utility for performance checks  
+
+        Created a formatting tool for trimming and cleaning code 
+        
+        Developed a refactor helper to transform known patterns 
+
+
+📚 Key Learnings  
+
+        Simple linters can prevent common bugs and bad habits  
+
+        Timing small functions gives insight into performance bottlenecks  
+
+        Manual formatting builds understanding of how linters work  
+
+        Automating pattern replacement encourages consistent refactoring 
+
+
+💡 Insights  
+
+        Teaching basic linting logic helps demystify tools like ESLint  
+
+        Developers should track performance, even for UI logic  
+
+        Replacing `var` and `==` universally reduces bugs  
+
+        Interactive coding tools help build muscle memory  
+
+
+📁 Code: days/day-27
+
