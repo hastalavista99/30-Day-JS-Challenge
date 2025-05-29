@@ -914,3 +914,40 @@ Code: days/day-20
 
 📁 Code: days/day-27
 
+
+### Day 28: 28/05/2025 Security Best Practices
+✅ Completed  
+
+        Built a text sanitizer to neutralize user input  
+        
+        Implemented CSP via meta tag to block external scripts  
+        
+        Developed a secure localStorage wrapper with encoding  
+        
+        Demonstrated XSS prevention through innerText rendering  
+        
+
+📚 Key Learnings  
+
+        input sanitization is critical for all dynamic content  
+        
+        CSPs block many common injection vectors by default  
+        
+        Base64 is not encryption, but it hides plain-text easily  
+        
+        Understanding DOM APIs helps identify XSS vectors  
+        
+
+💡 Insights  
+
+        Even simple tools like innerText provide strong XSS protection  
+        
+        CSP headers should be enforced early in project setups  
+        
+        Secure storage practices reduce accidental data leaks  
+        
+        Simulating bad input builds threat awareness  
+        
+
+📁 Code: days/day-28
+

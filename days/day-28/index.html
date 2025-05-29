@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 28 - Security Best Practices</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2em;
+      }
+      textarea,
+      input {
+        width: 100%;
+        padding: 0.5em;
+        margin-top: 0.5em;
+      }
+      pre {
+        background: #f4f4f4;
+        padding: 1em;
+        border-radius: 5px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day 28: Security Best Practices</h1>
+
+    <h2>1. Input Sanitization</h2>
+    <textarea id="userInput" placeholder="Paste suspicious input..."></textarea>
+    <button onclick="sanitizeAndShow()">Sanitize Input</button>
+    <pre id="sanitizedOutput"></pre>
+
+    <h2>2. Secure Data Storage</h2>
+    <input id="secureKey" placeholder="Key" />
+    <input id="secureValue" placeholder="Value" />
+    <button onclick="storeSecureData()">Store Securely</button>
+    <pre id="storageStatus"></pre>
+
+    <h2>3. Preventing XSS</h2>
+    <div id="xssDemo"></div>
+    <button onclick="simulateXSS()">Simulate XSS Prevention</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
