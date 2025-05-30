@@ -951,3 +951,40 @@ Code: days/day-20
 
 📁 Code: days/day-28
 
+
+### Day 29: 29/05/2025 Practical Algorithms
+✅ Completed  
+
+        Built a case-insensitive search filter for keyword matching  
+        
+        Implemented a flexible sort utility (asc/desc)  
+        
+        Developed an autocomplete engine for input suggestions  
+        
+        Added a regex-based pattern matcher across data  
+        
+
+📚 Key Learnings  
+
+        Regex is powerful but should be used carefully for performance  
+        
+        Sorting strategies matter for UX (e.g., alphabetical vs numeric)  
+        
+        Autocomplete enhances usability with minimal overhead  
+        
+        Data normalization (e.g., toLowerCase) is crucial for fair comparisons  
+        
+
+💡 Insights  
+
+        Even small UI features rely on solid algorithmic logic  
+        
+        Regex patterns can simulate fuzzy matching with tweaks  
+        
+        Modular design makes it easy to swap sorting/searching logic  
+        
+        Filtering and sorting can be combined for richer interactivity  
+        
+
+📁 Code: days/day-29
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Day 29 - Practical Algorithms</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2em;
+        max-width: 700px;
+        margin: auto;
+      }
+      input,
+      select {
+        padding: 0.5em;
+        margin: 0.5em 0;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding: 0.3em 0;
+        border-bottom: 1px solid #eee;
+      }
+      pre {
+        background: #f9f9f9;
+        padding: 1em;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day 29: Practical Algorithms</h1>
+
+    <h2>1. Search Filter</h2>
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search..."
+      oninput="filterData()"
+    />
+    <ul id="searchResults"></ul>
+
+    <h2>2. Sort Utility</h2>
+    <select id="sortOption" onchange="sortData()">
+      <option value="asc">Sort A-Z</option>
+      <option value="desc">Sort Z-A</option>
+    </select>
+    <ul id="sortedList"></ul>
+
+    <h2>3. Autocomplete</h2>
+    <input
+      type="text"
+      id="autocompleteInput"
+      placeholder="Type to suggest..."
+      oninput="showSuggestions()"
+    />
+    <ul id="suggestionsList"></ul>
+
+    <h2>4. Pattern Finder</h2>
+    <input
+      type="text"
+      id="patternInput"
+      placeholder="Enter pattern..."
+      oninput="findPattern()"
+    />
+    <pre id="patternOutput"></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
