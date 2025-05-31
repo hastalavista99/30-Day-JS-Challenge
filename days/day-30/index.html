@@ -1,0 +1,53 @@
+<!-- Exercises: Day 30: Final Project - Personal Dashboard Application
+Combine everything you've learned to build a personal dashboard:
+• Weather widget using API integration
+• Task manager with localStorage persistence
+• Notes section with rich text editing
+• Custom UI components and responsive design
+• State management for application data
+• Error handling and offline support -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">My Dashboard</h1>
+        <div class="space-x-2">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Refresh</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded">Settings</button>
+        </div>
+    </header>
+
+    <div class="min-h-screen p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Weather Widget -->
+        <div class="bg-white shadow rounded p-4">
+            <h2 class="text-xl font-bold mb-2">Weather</h2>
+            <div id="weather" class="text-sm text-gray-700">Loading weather...</div>
+        </div>
+
+        <!-- Task Manager -->
+        <div class="bg-white shadow rounded p-4">
+            <h2 class="text-xl font-bold mb-2">Tasks</h2>
+            <input id="taskInput" type="text" placeholder="Add a task" class="w-full border rounded px-3 py-2 mb-2" />
+            <ul id="taskList" class="space-y-1 text-sm text-gray-700"></ul>
+        </div>
+
+        <!-- Notes -->
+        <div class="bg-white shadow rounded p-4 col-span-full lg:col-span-1">
+            <h2 class="text-xl font-bold mb-2">Notes</h2>
+            <textarea id="notes" rows="10" class="w-full border rounded px-3 py-2 text-sm text-gray-700"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
